@@ -21,6 +21,10 @@ public class EjercicioDos {
 		
 		int total = a+ b;
 		System.out.println("La suma  de " + a +" + " + b + " es igual a " + total);
+		
+		// cierra stream
+		userInput.close();
+		
 	}
 
 }
