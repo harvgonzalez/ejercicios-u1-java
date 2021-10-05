@@ -23,13 +23,13 @@ public class EjercicioDoce {
 		
 		LocalDate start = LocalDate.of(year, month, day);
 		LocalDate end = LocalDate.now();
-		long years = ChronoUnit.YEARS.between(start, end);
-		System.out.println("You are: " + years + " years old"); // 17
+		final long YEARS = ChronoUnit.YEARS.between(start, end);
+		System.out.println("You are: " + YEARS + " years old"); // 17
 		
-		if(years < 18) {
+		if(YEARS < 18) {
 			System.out.println("Sorry you are a minor... bye");
 		}
-		else if(years > 18) {
+		else if(YEARS > 18) {
 			System.out.println("How you doing adult person :)");
 		}
 		else {
