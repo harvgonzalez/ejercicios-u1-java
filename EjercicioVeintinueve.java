@@ -4,25 +4,80 @@ public class EjercicioVeintinueve {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int contador = 0;
+		int contadorLetras = 0;
+		int contadorVocales=0;
+		int contadorA =0; 
+		int contadorE = 0; 
+		int contadorI = 0; 
+		int contadorO = 0;
+		int contadorU = 0;
+		
+		
+		// int contadorE = 0;
+		// int contadorI = 0;
+		// int contadorO = 0;
+		// int contadorU = 0;
+		
+		
 		String caracter;
-		String[] vocales  = {"a", "e", "i", "o", "u"}; 
+		// String[] vocales  = {"a", "e", "i", "o", "u"}; 
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Introduzca caracter: ");
+		System.out.println("Introduzca letra/vocal: ");
 		caracter = input.next();
 		
 		
 		while ( !caracter.equals("*")) {
+						
+			if( caracter.equalsIgnoreCase("a") ) {
+				contadorA++;
+				contadorVocales++;
+				
+			}
+			else if ( caracter.equalsIgnoreCase("e") ) {
+				
+				contadorE++;
+				contadorVocales++;
+				
+			}
+			else if ( caracter.equalsIgnoreCase("i") ) {
+				contadorI++;
+				contadorVocales++;
+				
+				
+			}
+			else if ( caracter.equalsIgnoreCase("o") ) {
+				
+				contadorO++;
+				contadorVocales++;
+				
+			}
+			else if ( caracter.equalsIgnoreCase("u") ) {
+				contadorU++;
+				contadorVocales++;
+			}
+			
 	
-			System.out.println("Intentar de nuevo: ");
+			else {
+
+				contadorLetras++;
+			}
+			
+			System.out.println("Ingrese otra letra/vocal o termine pulsando *:  $ ");
 			caracter = input.next();
-			contador++;
 		}
+		System.out.println("===============================================");
+		System.out.println("\n\n\nHa escrito " + contadorLetras + " letras y " + contadorVocales + " vocales...\n");
 		
-		System.out.println("Ha tenido " + contador + " intentos");
-	
+		System.out.println("===============================================");
+		System.out.println("Con la a: " + contadorA);
+		System.out.println("Con la e: " + contadorE);
+		System.out.println("Con la i: " + contadorI);
+		System.out.println("Con la o: " + contadorO);
+		System.out.println("Con la u: " + contadorU);
+		
+		System.out.println("===============================================");
 		
 		
 		
